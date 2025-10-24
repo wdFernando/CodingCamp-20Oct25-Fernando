@@ -1,4 +1,4 @@
-/* ==== GENERAL STYLE ==== */
+/*General*/
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,14 +6,34 @@ body {
   color: #333;
 }
 
-/* ==== HEADER ==== */
+/*Header*/
 header {
   background-color: #007bff;
   padding: 10px 0;
 }
+nav {
+  display: flex;
+  align-items: center; /* sejajarkan vertikal */
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-right: 10px;
+  cursor: pointer;
+}
 nav ul {
   display: flex;
-  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -29,15 +49,15 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
-
-/* ==== WELCOME SECTION ==== */
+/*welcome section*/
 .welcome {
   text-align: center;
   padding: 60px 20px;
   background-color: #eaf3ff;
+  background-image: url(https://picsum.photos/300/200?random=1);
+  background-size: cover;
 }
-
-/* ==== HEADQUARTER SECTION ==== */
+/*headquarter section*/
 .headquarter {
   text-align: center;
   padding: 40px 20px;
@@ -56,8 +76,20 @@ nav a:hover {
   border: 3px solid #007bff;
   margin: 0 auto 10px;
 }
+.circle,
+.jakarta,
+.bandung,
+.surabaya {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-right: 10px;
+  cursor: pointer;
+}
 
-/* ==== MESSAGE SECTION ==== */
+/*message section*/
 .message {
   padding: 50px 20px;
   background-color: #eaf3ff;
@@ -98,7 +130,7 @@ button:hover {
   border-radius: 5px;
 }
 
-/* ==== FOOTER ==== */
+/*Footer*/
 footer {
   text-align: center;
   padding: 10px;
@@ -106,7 +138,7 @@ footer {
   color: white;
 }
 
-/* ==== RESPONSIVE ==== */
+/*responsif*/
 @media (max-width: 768px) {
   .message-container {
     flex-direction: column;

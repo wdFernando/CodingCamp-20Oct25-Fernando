@@ -4,45 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- 🔹 Header / Navigation -->
+    <!-- Header / Navigation -->
     <header>
       <nav>
+        <div class="nav-left">
+          <img
+            src="https://picsum.photos/200/300?random=1"
+            alt="Logo"
+            class="logo"
+          />
+        </div>
         <ul>
           <li><a href="#home">Home</a></li>
+          <li><a href="#profile">Our Profile</a></li>
+          <li><a href="#portofolio">Portofolio</a></li>
           <li><a href="#message">Message Us</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- 🔹 Welcome Section -->
+    <!-- Welcome Section -->
     <section id="home" class="welcome">
-      <h2 id="welcome-text">Hi, Guest! Welcome To Website</h2>
+      <h2 id="welcome-text">Hai, Welcome To Website</h2>
       <p>Ini adalah website latihan pertama</p>
     </section>
 
-    <!-- 🔹 Our Headquarter -->
+    <!-- Our Headquarter -->
     <section class="headquarter">
       <h3>Our Headquarter</h3>
       <div class="city-container">
         <div class="city">
-          <div class="circle"></div>
+          <div class="circle">
+            <img
+              src="https://picsum.photos/200/300?random=2"
+              alt="Jakarta"
+              class="jakarta"
+            />
+          </div>
           <p>Jakarta</p>
         </div>
         <div class="city">
-          <div class="circle"></div>
+          <div class="circle">
+            <img
+              src="https://picsum.photos/200/300?random=3"
+              alt="Bandung"
+              class="bandung"
+            />
+          </div>
           <p>Bandung</p>
         </div>
         <div class="city">
-          <div class="circle"></div>
+          <div class="circle">
+            <img
+              src="https://picsum.photos/200/300?random=4"
+              alt="Surabaya"
+              class="surabaya"
+            />
+          </div>
           <p>Surabaya</p>
         </div>
       </div>
     </section>
 
-    <!-- 🔹 Message Us -->
+    <!-- Message Us -->
     <section id="message" class="message">
       <h3>Message Us</h3>
       <div class="message-container">
@@ -82,11 +109,11 @@
       </div>
     </section>
 
-    <!-- 🔹 Footer -->
+    <!-- Footer -->
     <footer>
       <p>Created By Nando</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

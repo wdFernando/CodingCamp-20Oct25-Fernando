@@ -21,7 +21,7 @@ document.getElementById("messageForm").addEventListener("submit", function (e) {
 
   // Validasi form
   if (!name || !birthdate || !gender || !messageText) {
-    alert("Semua field harus diisi!");
+    alert("Tolong lengkapi data Anda!");
     return;
   }
 
