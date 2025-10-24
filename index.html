@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodingCamp RevoU</title>
-</head>
-<body>
-    <nav>
-        
-    </nav>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 🔹 Header / Navigation -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#message">Message Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 🔹 Welcome Section -->
+    <section id="home" class="welcome">
+      <h2 id="welcome-text">Hi, Guest! Welcome To Website</h2>
+      <p>Ini adalah website latihan pertama</p>
+    </section>
+
+    <!-- 🔹 Our Headquarter -->
+    <section class="headquarter">
+      <h3>Our Headquarter</h3>
+      <div class="city-container">
+        <div class="city">
+          <div class="circle"></div>
+          <p>Jakarta</p>
+        </div>
+        <div class="city">
+          <div class="circle"></div>
+          <p>Bandung</p>
+        </div>
+        <div class="city">
+          <div class="circle"></div>
+          <p>Surabaya</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 Message Us -->
+    <section id="message" class="message">
+      <h3>Message Us</h3>
+      <div class="message-container">
+        <form id="messageForm">
+          <label>Nama:</label>
+          <input type="text" id="name" placeholder="Nama" required />
+
+          <label>Tanggal Lahir:</label>
+          <input type="date" id="birthdate" required />
+
+          <label>Jenis Kelamin:</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="gender" value="Laki-laki" required />
+              Laki-laki</label
+            >
+            <label
+              ><input type="radio" name="gender" value="Perempuan" />
+              Perempuan</label
+            >
+          </div>
+
+          <label>Pesan:</label>
+          <textarea
+            id="messageText"
+            placeholder="Tulis pesan..."
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div class="result-box">
+          <h4>Result:</h4>
+          <p id="result"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 Footer -->
+    <footer>
+      <p>Created By Nando</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
