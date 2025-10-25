@@ -1,9 +1,9 @@
 // Scroll smooth untuk navigasi
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
     document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
 });
@@ -27,6 +27,11 @@ document.getElementById("messageForm").addEventListener("submit", function (e) {
 
   // Update teks sambutan
   welcomeText.textContent = `Hi, ${name}! Welcome To Website`;
+
+  //Tampilkan Timestamp
+  const now = new Date();
+  document.getElementById("timestamp").textContent =
+    "Terkirim : " + now.toLocaleString();
 
   // Tampilkan hasil input
   result.innerHTML = `

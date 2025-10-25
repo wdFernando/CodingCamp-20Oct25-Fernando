@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome Website</title>
+    <title>Portofolio Website</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <!-- Header / Navigation -->
@@ -25,16 +26,27 @@
         </ul>
       </nav>
     </header>
-
-    <!-- Welcome Section -->
-    <section id="home" class="welcome">
-      <h2 id="welcome-text">Hai, Welcome To Website</h2>
-      <p>Ini adalah website latihan pertama</p>
+    <!-- Home Section -->
+    <section id="home" class="welcome text-white">
+      <h2 id="welcome-text" class="text-2xl font-bold mb-4">
+        Hai, Welcome To Paradise
+      </h2>
+      <p class="text-2xl">
+        Ini adalah website latihan pertama di RevoU. Di sini Anda bisa menemukan
+        kegembiraan
+      </p>
     </section>
-
+    <!-- Profile Section -->
+    <section id="profile" class="profile-section p-4 min-h-[250px] text-center">
+      <h2 class="text-2xl font-bold mb-4">Our Profile</h2>
+      <p class="text-lg">
+        Kami menyediakan berbagai pelanyanan. Perjalanan Anda adalah prioritas
+        kami
+      </p>
+    </section>
     <!-- Our Headquarter -->
     <section class="headquarter">
-      <h3>Our Headquarter</h3>
+      <h3 class="text-2xl font-bold mb-4">Our Headquarter</h3>
       <div class="city-container">
         <div class="city">
           <div class="circle">
@@ -71,7 +83,7 @@
 
     <!-- Message Us -->
     <section id="message" class="message">
-      <h3>Message Us</h3>
+      <h3 class="text-2xl font-bold mb-4">Message Us</h3>
       <div class="message-container">
         <form id="messageForm">
           <label>Nama:</label>
@@ -103,7 +115,7 @@
         </form>
 
         <div class="result-box">
-          <h4>Result:</h4>
+          <h4 id="timestamp" class="text-gray-600 mt-4"></h4>
           <p id="result"></p>
         </div>
       </div>
@@ -111,7 +123,7 @@
 
     <!-- Footer -->
     <footer>
-      <p>Created By Nando</p>
+      <p>&copy; 2025 Nando's Portofolio. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
